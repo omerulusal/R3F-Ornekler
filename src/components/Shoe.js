@@ -2,7 +2,7 @@ import React, { useRef } from 'react';
 import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader";
 import { useFrame, useLoader } from '@react-three/fiber';
 import { Text, Environment, Sparkles, Float } from '@react-three/drei';
-function Car() {
+function Shoe() {
     const gltf = useLoader(GLTFLoader, "./shoe.glb");
     const shoeRef = useRef();
     useFrame(() => {
@@ -43,4 +43,4 @@ function Car() {
 }
 
 
-export default Car;
+export default Shoe;
